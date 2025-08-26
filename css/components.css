@@ -1,0 +1,214 @@
+/* Стили компонентов - кнопки, карточки, блоки */
+
+/* Информация о подходе */
+.approach-info {
+    text-align: center;
+    margin-bottom: 20px;
+    font-style: italic;
+    color: #666;
+}
+
+/* Кнопки действий */
+.action-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.btn-primary {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+.btn-primary:hover {
+    background-color: #555;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #333;
+    border: 2px solid #333;
+    padding: 15px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+.btn-secondary:hover {
+    background-color: #333;
+    color: white;
+}
+
+/* Подпись мастера */
+.signature {
+    text-align: center;
+    margin-bottom: 20px;
+    font-style: italic;
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* Фото процесса работы */
+.work-process-photo {
+    margin-bottom: 20px;
+}
+
+.work-process-photo img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Цитата о работе */
+.work-quote {
+    text-align: center;
+    font-style: italic;
+    color: #666;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}
+
+/* Блок услуг */
+.services {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.services h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Список услуг */
+.services-list {
+    margin-bottom: 30px;
+}
+
+.service-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+    gap: 15px;
+}
+
+.service-item:last-child {
+    border-bottom: none;
+}
+
+.service-number {
+    font-weight: bold;
+    color: #666;
+    min-width: 40px;
+}
+
+.service-name {
+    flex: 1;
+    line-height: 1.4;
+}
+
+.service-price {
+    font-weight: bold;
+    font-size: 1.1rem;
+    min-width: 80px;
+    text-align: right;
+}
+
+.services-btn {
+    width: 100%;
+}
+
+/* Блок контактов */
+.contacts {
+    background: #333;
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.contacts h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+/* Социальные сети */
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.social-btn {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+.social-btn:hover {
+    background-color: white;
+    color: #333;
+}
+
+/* Дополнительная информация */
+.additional-info {
+    font-size: 0.9rem;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.additional-info p {
+    margin-bottom: 5px;
+}
+
+/* Контактное фото */
+.contact-photo {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.contact-photo img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid white;
+}

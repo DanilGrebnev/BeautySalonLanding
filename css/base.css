@@ -1,0 +1,54 @@
+/* Базовые стили и сброс - основа для всего сайта */
+
+/* Сброс стилей браузера по умолчанию */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Основные стили для body */
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Базовые стили для заголовков */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Базовые стили для изображений */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Базовые стили для кнопок */
+button {
+    font-family: inherit;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+/* Базовые стили для ссылок */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Базовые стили для параграфов */
+p {
+    margin-bottom: 10px;
+}

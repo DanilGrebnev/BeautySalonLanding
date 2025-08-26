@@ -1,0 +1,118 @@
+/* Адаптивные стили - медиа-запросы для разных устройств */
+
+/* Адаптивность для планшетов */
+@media (max-width: 768px) {
+    /* Изменение макета на одноколоночный */
+    .container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    /* Уменьшение отступов в блоках */
+    .left-column,
+    .services,
+    .portfolio-gallery,
+    .contacts {
+        padding: 20px;
+    }
+
+    /* Изменение верхнего блока на вертикальный */
+    .top-section {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .info-section {
+        padding-right: 0;
+        text-align: center;
+    }
+
+    /* Уменьшение размера заголовка */
+    .master-name {
+        font-size: 2rem;
+    }
+
+    /* Адаптация галереи для планшетов */
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery-grid .wide-image {
+        grid-column: span 2;
+    }
+
+    /* Изменение позиционирования контактного фото */
+    .contact-photo {
+        position: static;
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 480px) {
+    /* Минимальные отступы для мобильных */
+    .container {
+        padding: 5px;
+    }
+
+    /* Уменьшение отступов в блоках для мобильных */
+    .left-column,
+    .services,
+    .portfolio-gallery,
+    .contacts {
+        padding: 15px;
+    }
+
+    /* Дальнейшее уменьшение заголовка */
+    .master-name {
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+    }
+
+    /* Вертикальное расположение элементов услуг */
+    .service-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    /* Стили цены для мобильных */
+    .service-price {
+        text-align: left;
+        font-size: 1.2rem;
+        color: #333;
+        font-weight: bold;
+    }
+
+    /* Одноколоночная галерея на мобильных */
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-grid .wide-image {
+        grid-column: span 1;
+    }
+
+    /* Вертикальные социальные кнопки */
+    .social-links {
+        flex-direction: column;
+    }
+
+    /* Перенос миниатюр на новую строку */
+    .gallery-thumbnails {
+        flex-wrap: wrap;
+    }
+
+    /* Увеличение отступов между кнопками */
+    .action-buttons {
+        gap: 15px;
+    }
+
+    /* Уменьшение размера кнопок */
+    .btn-primary,
+    .btn-secondary {
+        padding: 12px 20px;
+        font-size: 0.9rem;
+    }
+}
